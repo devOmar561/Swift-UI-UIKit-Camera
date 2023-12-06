@@ -99,6 +99,3 @@ Make inline comments that anyone can understand.
 Key functions, extensions, classes, enums, etc. should be annotated with concise quick help information. 
 
 
-## Notes from candidate
-
-Put notes on what you implemented, any issues you had, what else you would do if you had more time, etc. 
