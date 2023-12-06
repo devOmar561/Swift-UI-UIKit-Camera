@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+    </dependencies>
+    <scenes>
+        <!--Kontax Cam-->
+        <scene sceneID="36P-T6-gFU">
+            <objects>
+                <viewController storyboardIdentifier="cameraVC" id="umb-UN-lcy" customClass="CameraViewController" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="Kontax Cam" id="COB-p7-MMz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S3F-Q5-Cd6" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+</document>

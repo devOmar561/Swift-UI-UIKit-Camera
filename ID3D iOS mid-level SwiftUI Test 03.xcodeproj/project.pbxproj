@@ -1,0 +1,937 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		011F51B7264F7F74008F5CB3 /* ID3D_iOS_mid_level_SwiftUI_Test_03App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011F51B6264F7F74008F5CB3 /* ID3D_iOS_mid_level_SwiftUI_Test_03App.swift */; };
+		011F51B9264F7F74008F5CB3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011F51B8264F7F74008F5CB3 /* ContentView.swift */; };
+		011F51BB264F7F77008F5CB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 011F51BA264F7F77008F5CB3 /* Assets.xcassets */; };
+		011F51C0264F7F77008F5CB3 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011F51BF264F7F77008F5CB3 /* Persistence.swift */; };
+		011F51C3264F7F77008F5CB3 /* ID3D_iOS_mid_level_SwiftUI_Test_03.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 011F51C1264F7F77008F5CB3 /* ID3D_iOS_mid_level_SwiftUI_Test_03.xcdatamodeld */; };
+		011F51CE264F7F77008F5CB3 /* ID3D_iOS_mid_level_SwiftUI_Test_03Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011F51CD264F7F77008F5CB3 /* ID3D_iOS_mid_level_SwiftUI_Test_03Tests.swift */; };
+		011F51D9264F7F77008F5CB3 /* ID3D_iOS_mid_level_SwiftUI_Test_03UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011F51D8264F7F77008F5CB3 /* ID3D_iOS_mid_level_SwiftUI_Test_03UITests.swift */; };
+		019CB23E2658887100936B32 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019CB23D2658887100936B32 /* CardView.swift */; };
+		019CB24326588A6800936B32 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019CB24226588A6800936B32 /* CardModel.swift */; };
+		019CB24526588B2000936B32 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019CB24426588B2000936B32 /* Helpers.swift */; };
+		019CB24726588B6600936B32 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 019CB24626588B6600936B32 /* Colors.xcassets */; };
+		019CB24926588D8600936B32 /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019CB24826588D8600936B32 /* Navigation.swift */; };
+		019CB24C2658913300936B32 /* SwiftUIPlus in Frameworks */ = {isa = PBXBuildFile; productRef = 019CB24B2658913300936B32 /* SwiftUIPlus */; };
+		019CB2682658DF9400936B32 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 019CB26A2658DF9400936B32 /* Localizable.strings */; };
+		019CB30B2658E54300936B32 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 019CB30A2658E54300936B32 /* SnapKit */; };
+		019CB455265B12AE00936B32 /* ArchiveManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019CB454265B12AE00936B32 /* ArchiveManager.swift */; };
+		0F66BD79AFA7A1D72BCD406D /* Pods_ID3D_iOS_mid_level_SwiftUI_Test_03_ID3D_iOS_mid_level_SwiftUI_Test_03UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8271879918D2DF7FBBAF732 /* Pods_ID3D_iOS_mid_level_SwiftUI_Test_03_ID3D_iOS_mid_level_SwiftUI_Test_03UITests.framework */; };
+		3415777326FA102C00659D02 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3415777226FA102C00659D02 /* CameraController.swift */; };
+		3415777A26FA108300659D02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3415777926FA108300659D02 /* Main.storyboard */; };
+		3415777C26FA10E500659D02 /* TapticGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3415777B26FA10E500659D02 /* TapticGenerator.swift */; };
+		3415777E26FA10F300659D02 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3415777D26FA10F300659D02 /* StorageManager.swift */; };
+		3415778026FA207200659D02 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3415777F26FA207100659D02 /* CoreDataManager.swift */; };
+		3415778226FA53F800659D02 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3415778126FA53F800659D02 /* Observable.swift */; };
+		3447EDB826FAA1A70018A716 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3447EDB726FAA1A70018A716 /* Constants.swift */; };
+		3498D8AA26FB3D7700C74956 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3498D8A926FB3D7700C74956 /* ContentViewModel.swift */; };
+		4B470A93806BC32644FE8390 /* Pods_ID3D_iOS_mid_level_SwiftUI_Test_03.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 152F2C8EB3A13330A9EEB43C /* Pods_ID3D_iOS_mid_level_SwiftUI_Test_03.framework */; };
+		F6C918C4376CBEDA863679F7 /* Pods_ID3D_iOS_mid_level_SwiftUI_Test_03Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE84121FEEA43DB698F6BA90 /* Pods_ID3D_iOS_mid_level_SwiftUI_Test_03Tests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		011F51CA264F7F77008F5CB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 011F51AB264F7F74008F5CB3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 011F51B2264F7F74008F5CB3;
+			remoteInfo = "ID3D iOS mid-level SwiftUI Test 03";
+		};
+		011F51D5264F7F77008F5CB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 011F51AB264F7F74008F5CB3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 011F51B2264F7F74008F5CB3;
+			remoteInfo = "ID3D iOS mid-level SwiftUI Test 03";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		011F51B3264F7F74008F5CB3 /* ID3D iOS mid-level SwiftUI Test 03.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ID3D iOS mid-level SwiftUI Test 03.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		011F51B6264F7F74008F5CB3 /* ID3D_iOS_mid_level_SwiftUI_Test_03App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ID3D_iOS_mid_level_SwiftUI_Test_03App.swift; sourceTree = "<group>"; };
+		011F51B8264F7F74008F5CB3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		011F51BA264F7F77008F5CB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		011F51BF264F7F77008F5CB3 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		011F51C2264F7F77008F5CB3 /* ID3D_iOS_mid_level_SwiftUI_Test_03.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ID3D_iOS_mid_level_SwiftUI_Test_03.xcdatamodel; sourceTree = "<group>"; };
+		011F51C4264F7F77008F5CB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		011F51C9264F7F77008F5CB3 /* ID3D iOS mid-level SwiftUI Test 03Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ID3D iOS mid-level SwiftUI Test 03Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		011F51CD264F7F77008F5CB3 /* ID3D_iOS_mid_level_SwiftUI_Test_03Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ID3D_iOS_mid_level_SwiftUI_Test_03Tests.swift; sourceTree = "<group>"; };
+		011F51CF264F7F77008F5CB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		011F51D4264F7F77008F5CB3 /* ID3D iOS mid-level SwiftUI Test 03UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ID3D iOS mid-level SwiftUI Test 03UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		011F51D8264F7F77008F5CB3 /* ID3D_iOS_mid_level_SwiftUI_Test_03UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ID3D_iOS_mid_level_SwiftUI_Test_03UITests.swift; sourceTree = "<group>"; };
+		011F51DA264F7F77008F5CB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		019CB23D2658887100936B32 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		019CB24226588A6800936B32 /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		019CB24426588B2000936B32 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		019CB24626588B6600936B32 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		019CB24826588D8600936B32 /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
+		019CB2692658DF9400936B32 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		019CB44E2659AF1E00936B32 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		019CB454265B12AE00936B32 /* ArchiveManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveManager.swift; sourceTree = "<group>"; };
+		095A46E96763FB70B7119D8D /* Pods-ID3D iOS mid-level SwiftUI Test 03.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ID3D iOS mid-level SwiftUI Test 03.debug.xcconfig"; path = "Target Support Files/Pods-ID3D iOS mid-level SwiftUI Test 03/Pods-ID3D iOS mid-level SwiftUI Test 03.debug.xcconfig"; sourceTree = "<group>"; };
+		152F2C8EB3A13330A9EEB43C /* Pods_ID3D_iOS_mid_level_SwiftUI_Test_03.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ID3D_iOS_mid_level_SwiftUI_Test_03.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		166B2758D6BD162F59304E17 /* Pods-ID3D iOS mid-level SwiftUI Test 03Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ID3D iOS mid-level SwiftUI Test 03Tests.release.xcconfig"; path = "Target Support Files/Pods-ID3D iOS mid-level SwiftUI Test 03Tests/Pods-ID3D iOS mid-level SwiftUI Test 03Tests.release.xcconfig"; sourceTree = "<group>"; };
+		3415777226FA102C00659D02 /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
+		3415777926FA108300659D02 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		3415777B26FA10E500659D02 /* TapticGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapticGenerator.swift; sourceTree = "<group>"; };
+		3415777D26FA10F300659D02 /* StorageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		3415777F26FA207100659D02 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		3415778126FA53F800659D02 /* Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		3447EDB726FAA1A70018A716 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3498D8A926FB3D7700C74956 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		80EE1937588089C5F296F4C9 /* Pods-ID3D iOS mid-level SwiftUI Test 03-ID3D iOS mid-level SwiftUI Test 03UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ID3D iOS mid-level SwiftUI Test 03-ID3D iOS mid-level SwiftUI Test 03UITests.release.xcconfig"; path = "Target Support Files/Pods-ID3D iOS mid-level SwiftUI Test 03-ID3D iOS mid-level SwiftUI Test 03UITests/Pods-ID3D iOS mid-level SwiftUI Test 03-ID3D iOS mid-level SwiftUI Test 03UITests.release.xcconfig"; sourceTree = "<group>"; };
+		81935CAA939440A19C210214 /* Pods-ID3D iOS mid-level SwiftUI Test 03.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ID3D iOS mid-level SwiftUI Test 03.release.xcconfig"; path = "Target Support Files/Pods-ID3D iOS mid-level SwiftUI Test 03/Pods-ID3D iOS mid-level SwiftUI Test 03.release.xcconfig"; sourceTree = "<group>"; };
+		C2CBA09BCB86BA1970B61A32 /* Pods-ID3D iOS mid-level SwiftUI Test 03Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ID3D iOS mid-level SwiftUI Test 03Tests.debug.xcconfig"; path = "Target Support Files/Pods-ID3D iOS mid-level SwiftUI Test 03Tests/Pods-ID3D iOS mid-level SwiftUI Test 03Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		D20897A74B54B238292D4832 /* Pods-ID3D iOS mid-level SwiftUI Test 03-ID3D iOS mid-level SwiftUI Test 03UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ID3D iOS mid-level SwiftUI Test 03-ID3D iOS mid-level SwiftUI Test 03UITests.debug.xcconfig"; path = "Target Support Files/Pods-ID3D iOS mid-level SwiftUI Test 03-ID3D iOS mid-level SwiftUI Test 03UITests/Pods-ID3D iOS mid-level SwiftUI Test 03-ID3D iOS mid-level SwiftUI Test 03UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EE84121FEEA43DB698F6BA90 /* Pods_ID3D_iOS_mid_level_SwiftUI_Test_03Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ID3D_iOS_mid_level_SwiftUI_Test_03Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8271879918D2DF7FBBAF732 /* Pods_ID3D_iOS_mid_level_SwiftUI_Test_03_ID3D_iOS_mid_level_SwiftUI_Test_03UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ID3D_iOS_mid_level_SwiftUI_Test_03_ID3D_iOS_mid_level_SwiftUI_Test_03UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		011F51B0264F7F74008F5CB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				019CB30B2658E54300936B32 /* SnapKit in Frameworks */,
+				019CB24C2658913300936B32 /* SwiftUIPlus in Frameworks */,
+				4B470A93806BC32644FE8390 /* Pods_ID3D_iOS_mid_level_SwiftUI_Test_03.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		011F51C6264F7F77008F5CB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6C918C4376CBEDA863679F7 /* Pods_ID3D_iOS_mid_level_SwiftUI_Test_03Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		011F51D1264F7F77008F5CB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F66BD79AFA7A1D72BCD406D /* Pods_ID3D_iOS_mid_level_SwiftUI_Test_03_ID3D_iOS_mid_level_SwiftUI_Test_03UITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		011F51AA264F7F74008F5CB3 = {
+			isa = PBXGroup;
+			children = (
+				019CB44E2659AF1E00936B32 /* README.md */,
+				011F51B5264F7F74008F5CB3 /* ID3D iOS mid-level SwiftUI Test 03 */,
+				011F51CC264F7F77008F5CB3 /* ID3D iOS mid-level SwiftUI Test 03Tests */,
+				011F51D7264F7F77008F5CB3 /* ID3D iOS mid-level SwiftUI Test 03UITests */,
+				011F51B4264F7F74008F5CB3 /* Products */,
+				E1393BC47B9EC382A8B099ED /* Pods */,
+				7E7C415E72FF1BE0EDACE30D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		011F51B4264F7F74008F5CB3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				011F51B3264F7F74008F5CB3 /* ID3D iOS mid-level SwiftUI Test 03.app */,
+				011F51C9264F7F77008F5CB3 /* ID3D iOS mid-level SwiftUI Test 03Tests.xctest */,
+				011F51D4264F7F77008F5CB3 /* ID3D iOS mid-level SwiftUI Test 03UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		011F51B5264F7F74008F5CB3 /* ID3D iOS mid-level SwiftUI Test 03 */ = {
+			isa = PBXGroup;
+			children = (
+				3447EDB626FAA19A0018A716 /* Constants */,
+				019CB453265B129200936B32 /* Helpers */,
+				3415777126FA101100659D02 /* Controllers */,
+				019CB2512658BA9800936B32 /* Models */,
+				019CB2502658BA7300936B32 /* Views */,
+				3415777826FA105800659D02 /* Storyboard */,
+				019CB2522658BABF00936B32 /* CoreData */,
+				3415777026FA0FF200659D02 /* Assets */,
+				011F51C4264F7F77008F5CB3 /* Info.plist */,
+				019CB26A2658DF9400936B32 /* Localizable.strings */,
+				011F51B6264F7F74008F5CB3 /* ID3D_iOS_mid_level_SwiftUI_Test_03App.swift */,
+			);
+			path = "ID3D iOS mid-level SwiftUI Test 03";
+			sourceTree = "<group>";
+		};
+		011F51CC264F7F77008F5CB3 /* ID3D iOS mid-level SwiftUI Test 03Tests */ = {
+			isa = PBXGroup;
+			children = (
+				011F51CD264F7F77008F5CB3 /* ID3D_iOS_mid_level_SwiftUI_Test_03Tests.swift */,
+				011F51CF264F7F77008F5CB3 /* Info.plist */,
+			);
+			path = "ID3D iOS mid-level SwiftUI Test 03Tests";
+			sourceTree = "<group>";
+		};
+		011F51D7264F7F77008F5CB3 /* ID3D iOS mid-level SwiftUI Test 03UITests */ = {
+			isa = PBXGroup;
+			children = (
+				011F51D8264F7F77008F5CB3 /* ID3D_iOS_mid_level_SwiftUI_Test_03UITests.swift */,
+				011F51DA264F7F77008F5CB3 /* Info.plist */,
+			);
+			path = "ID3D iOS mid-level SwiftUI Test 03UITests";
+			sourceTree = "<group>";
+		};
+		019CB2502658BA7300936B32 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3415777426FA104000659D02 /* Card */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		019CB2512658BA9800936B32 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				019CB24226588A6800936B32 /* CardModel.swift */,
+				019CB24826588D8600936B32 /* Navigation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		019CB2522658BABF00936B32 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				011F51C1264F7F77008F5CB3 /* ID3D_iOS_mid_level_SwiftUI_Test_03.xcdatamodeld */,
+				011F51BF264F7F77008F5CB3 /* Persistence.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		019CB453265B129200936B32 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				019CB24426588B2000936B32 /* Helpers.swift */,
+				3415778126FA53F800659D02 /* Observable.swift */,
+				3415777D26FA10F300659D02 /* StorageManager.swift */,
+				3415777B26FA10E500659D02 /* TapticGenerator.swift */,
+				019CB454265B12AE00936B32 /* ArchiveManager.swift */,
+				3415777F26FA207100659D02 /* CoreDataManager.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		3415777026FA0FF200659D02 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				019CB24626588B6600936B32 /* Colors.xcassets */,
+				011F51BA264F7F77008F5CB3 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		3415777126FA101100659D02 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3415777226FA102C00659D02 /* CameraController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3415777426FA104000659D02 /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				019CB23D2658887100936B32 /* CardView.swift */,
+				011F51B8264F7F74008F5CB3 /* ContentView.swift */,
+				3498D8A926FB3D7700C74956 /* ContentViewModel.swift */,
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
+		3415777826FA105800659D02 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				3415777926FA108300659D02 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		3447EDB626FAA19A0018A716 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				3447EDB726FAA1A70018A716 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		7E7C415E72FF1BE0EDACE30D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				152F2C8EB3A13330A9EEB43C /* Pods_ID3D_iOS_mid_level_SwiftUI_Test_03.framework */,
+				F8271879918D2DF7FBBAF732 /* Pods_ID3D_iOS_mid_level_SwiftUI_Test_03_ID3D_iOS_mid_level_SwiftUI_Test_03UITests.framework */,
+				EE84121FEEA43DB698F6BA90 /* Pods_ID3D_iOS_mid_level_SwiftUI_Test_03Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E1393BC47B9EC382A8B099ED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				095A46E96763FB70B7119D8D /* Pods-ID3D iOS mid-level SwiftUI Test 03.debug.xcconfig */,
+				81935CAA939440A19C210214 /* Pods-ID3D iOS mid-level SwiftUI Test 03.release.xcconfig */,
+				D20897A74B54B238292D4832 /* Pods-ID3D iOS mid-level SwiftUI Test 03-ID3D iOS mid-level SwiftUI Test 03UITests.debug.xcconfig */,
+				80EE1937588089C5F296F4C9 /* Pods-ID3D iOS mid-level SwiftUI Test 03-ID3D iOS mid-level SwiftUI Test 03UITests.release.xcconfig */,
+				C2CBA09BCB86BA1970B61A32 /* Pods-ID3D iOS mid-level SwiftUI Test 03Tests.debug.xcconfig */,
+				166B2758D6BD162F59304E17 /* Pods-ID3D iOS mid-level SwiftUI Test 03Tests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		011F51B2264F7F74008F5CB3 /* ID3D iOS mid-level SwiftUI Test 03 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 011F51DD264F7F77008F5CB3 /* Build configuration list for PBXNativeTarget "ID3D iOS mid-level SwiftUI Test 03" */;
+			buildPhases = (
+				1D4475C43A8C39825286DCFF /* [CP] Check Pods Manifest.lock */,
+				011F51AF264F7F74008F5CB3 /* Sources */,
+				011F51B0264F7F74008F5CB3 /* Frameworks */,
+				011F51B1264F7F74008F5CB3 /* Resources */,
+				063F2ABCA8CC138B5A8086AF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ID3D iOS mid-level SwiftUI Test 03";
+			packageProductDependencies = (
+				019CB24B2658913300936B32 /* SwiftUIPlus */,
+				019CB30A2658E54300936B32 /* SnapKit */,
+			);
+			productName = "ID3D iOS mid-level SwiftUI Test 03";
+			productReference = 011F51B3264F7F74008F5CB3 /* ID3D iOS mid-level SwiftUI Test 03.app */;
+			productType = "com.apple.product-type.application";
+		};
+		011F51C8264F7F77008F5CB3 /* ID3D iOS mid-level SwiftUI Test 03Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 011F51E0264F7F77008F5CB3 /* Build configuration list for PBXNativeTarget "ID3D iOS mid-level SwiftUI Test 03Tests" */;
+			buildPhases = (
+				5AFB82FCBAFFC010F44BFF65 /* [CP] Check Pods Manifest.lock */,
+				011F51C5264F7F77008F5CB3 /* Sources */,
+				011F51C6264F7F77008F5CB3 /* Frameworks */,
+				011F51C7264F7F77008F5CB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				011F51CB264F7F77008F5CB3 /* PBXTargetDependency */,
+			);
+			name = "ID3D iOS mid-level SwiftUI Test 03Tests";
+			productName = "ID3D iOS mid-level SwiftUI Test 03Tests";
+			productReference = 011F51C9264F7F77008F5CB3 /* ID3D iOS mid-level SwiftUI Test 03Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		011F51D3264F7F77008F5CB3 /* ID3D iOS mid-level SwiftUI Test 03UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 011F51E3264F7F77008F5CB3 /* Build configuration list for PBXNativeTarget "ID3D iOS mid-level SwiftUI Test 03UITests" */;
+			buildPhases = (
+				57DDF463E0A28560EBDA9119 /* [CP] Check Pods Manifest.lock */,
+				011F51D0264F7F77008F5CB3 /* Sources */,
+				011F51D1264F7F77008F5CB3 /* Frameworks */,
+				011F51D2264F7F77008F5CB3 /* Resources */,
+				09D7E5EDA212033B13E3DF77 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				011F51D6264F7F77008F5CB3 /* PBXTargetDependency */,
+			);
+			name = "ID3D iOS mid-level SwiftUI Test 03UITests";
+			productName = "ID3D iOS mid-level SwiftUI Test 03UITests";
+			productReference = 011F51D4264F7F77008F5CB3 /* ID3D iOS mid-level SwiftUI Test 03UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		011F51AB264F7F74008F5CB3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					011F51B2264F7F74008F5CB3 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					011F51C8264F7F77008F5CB3 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 011F51B2264F7F74008F5CB3;
+					};
+					011F51D3264F7F77008F5CB3 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 011F51B2264F7F74008F5CB3;
+					};
+				};
+			};
+			buildConfigurationList = 011F51AE264F7F74008F5CB3 /* Build configuration list for PBXProject "ID3D iOS mid-level SwiftUI Test 03" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 011F51AA264F7F74008F5CB3;
+			packageReferences = (
+				019CB24A2658913300936B32 /* XCRemoteSwiftPackageReference "SwiftUIPlus" */,
+				019CB3092658E54200936B32 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
+			productRefGroup = 011F51B4264F7F74008F5CB3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				011F51B2264F7F74008F5CB3 /* ID3D iOS mid-level SwiftUI Test 03 */,
+				011F51C8264F7F77008F5CB3 /* ID3D iOS mid-level SwiftUI Test 03Tests */,
+				011F51D3264F7F77008F5CB3 /* ID3D iOS mid-level SwiftUI Test 03UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		011F51B1264F7F74008F5CB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				019CB2682658DF9400936B32 /* Localizable.strings in Resources */,
+				019CB24726588B6600936B32 /* Colors.xcassets in Resources */,
+				011F51BB264F7F77008F5CB3 /* Assets.xcassets in Resources */,
+				3415777A26FA108300659D02 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		011F51C7264F7F77008F5CB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		011F51D2264F7F77008F5CB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		063F2ABCA8CC138B5A8086AF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ID3D iOS mid-level SwiftUI Test 03/Pods-ID3D iOS mid-level SwiftUI Test 03-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ID3D iOS mid-level SwiftUI Test 03/Pods-ID3D iOS mid-level SwiftUI Test 03-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ID3D iOS mid-level SwiftUI Test 03/Pods-ID3D iOS mid-level SwiftUI Test 03-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		09D7E5EDA212033B13E3DF77 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ID3D iOS mid-level SwiftUI Test 03-ID3D iOS mid-level SwiftUI Test 03UITests/Pods-ID3D iOS mid-level SwiftUI Test 03-ID3D iOS mid-level SwiftUI Test 03UITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ID3D iOS mid-level SwiftUI Test 03-ID3D iOS mid-level SwiftUI Test 03UITests/Pods-ID3D iOS mid-level SwiftUI Test 03-ID3D iOS mid-level SwiftUI Test 03UITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ID3D iOS mid-level SwiftUI Test 03-ID3D iOS mid-level SwiftUI Test 03UITests/Pods-ID3D iOS mid-level SwiftUI Test 03-ID3D iOS mid-level SwiftUI Test 03UITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1D4475C43A8C39825286DCFF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ID3D iOS mid-level SwiftUI Test 03-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		57DDF463E0A28560EBDA9119 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ID3D iOS mid-level SwiftUI Test 03-ID3D iOS mid-level SwiftUI Test 03UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5AFB82FCBAFFC010F44BFF65 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ID3D iOS mid-level SwiftUI Test 03Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		011F51AF264F7F74008F5CB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				011F51C3264F7F77008F5CB3 /* ID3D_iOS_mid_level_SwiftUI_Test_03.xcdatamodeld in Sources */,
+				3415778226FA53F800659D02 /* Observable.swift in Sources */,
+				019CB24526588B2000936B32 /* Helpers.swift in Sources */,
+				011F51C0264F7F77008F5CB3 /* Persistence.swift in Sources */,
+				019CB24926588D8600936B32 /* Navigation.swift in Sources */,
+				3447EDB826FAA1A70018A716 /* Constants.swift in Sources */,
+				3415777326FA102C00659D02 /* CameraController.swift in Sources */,
+				011F51B9264F7F74008F5CB3 /* ContentView.swift in Sources */,
+				3498D8AA26FB3D7700C74956 /* ContentViewModel.swift in Sources */,
+				011F51B7264F7F74008F5CB3 /* ID3D_iOS_mid_level_SwiftUI_Test_03App.swift in Sources */,
+				3415777C26FA10E500659D02 /* TapticGenerator.swift in Sources */,
+				019CB23E2658887100936B32 /* CardView.swift in Sources */,
+				019CB24326588A6800936B32 /* CardModel.swift in Sources */,
+				019CB455265B12AE00936B32 /* ArchiveManager.swift in Sources */,
+				3415778026FA207200659D02 /* CoreDataManager.swift in Sources */,
+				3415777E26FA10F300659D02 /* StorageManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		011F51C5264F7F77008F5CB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				011F51CE264F7F77008F5CB3 /* ID3D_iOS_mid_level_SwiftUI_Test_03Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		011F51D0264F7F77008F5CB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				011F51D9264F7F77008F5CB3 /* ID3D_iOS_mid_level_SwiftUI_Test_03UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		011F51CB264F7F77008F5CB3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 011F51B2264F7F74008F5CB3 /* ID3D iOS mid-level SwiftUI Test 03 */;
+			targetProxy = 011F51CA264F7F77008F5CB3 /* PBXContainerItemProxy */;
+		};
+		011F51D6264F7F77008F5CB3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 011F51B2264F7F74008F5CB3 /* ID3D iOS mid-level SwiftUI Test 03 */;
+			targetProxy = 011F51D5264F7F77008F5CB3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		019CB26A2658DF9400936B32 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				019CB2692658DF9400936B32 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		011F51DB264F7F77008F5CB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		011F51DC264F7F77008F5CB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		011F51DE264F7F77008F5CB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 095A46E96763FB70B7119D8D /* Pods-ID3D iOS mid-level SwiftUI Test 03.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = CZK733B233;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "ID3D iOS mid-level SwiftUI Test 03/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lavamapp.ID3D-iOS-mid-level-SwiftUI-Test-03";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		011F51DF264F7F77008F5CB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81935CAA939440A19C210214 /* Pods-ID3D iOS mid-level SwiftUI Test 03.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = CZK733B233;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "ID3D iOS mid-level SwiftUI Test 03/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lavamapp.ID3D-iOS-mid-level-SwiftUI-Test-03";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		011F51E1264F7F77008F5CB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2CBA09BCB86BA1970B61A32 /* Pods-ID3D iOS mid-level SwiftUI Test 03Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LHS49D8RYY;
+				INFOPLIST_FILE = "ID3D iOS mid-level SwiftUI Test 03Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lavamap.ID3D-iOS-mid-level-SwiftUI-Test-03Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ID3D iOS mid-level SwiftUI Test 03.app/ID3D iOS mid-level SwiftUI Test 03";
+			};
+			name = Debug;
+		};
+		011F51E2264F7F77008F5CB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 166B2758D6BD162F59304E17 /* Pods-ID3D iOS mid-level SwiftUI Test 03Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LHS49D8RYY;
+				INFOPLIST_FILE = "ID3D iOS mid-level SwiftUI Test 03Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lavamap.ID3D-iOS-mid-level-SwiftUI-Test-03Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ID3D iOS mid-level SwiftUI Test 03.app/ID3D iOS mid-level SwiftUI Test 03";
+			};
+			name = Release;
+		};
+		011F51E4264F7F77008F5CB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D20897A74B54B238292D4832 /* Pods-ID3D iOS mid-level SwiftUI Test 03-ID3D iOS mid-level SwiftUI Test 03UITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LHS49D8RYY;
+				INFOPLIST_FILE = "ID3D iOS mid-level SwiftUI Test 03UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lavamap.ID3D-iOS-mid-level-SwiftUI-Test-03UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ID3D iOS mid-level SwiftUI Test 03";
+			};
+			name = Debug;
+		};
+		011F51E5264F7F77008F5CB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80EE1937588089C5F296F4C9 /* Pods-ID3D iOS mid-level SwiftUI Test 03-ID3D iOS mid-level SwiftUI Test 03UITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LHS49D8RYY;
+				INFOPLIST_FILE = "ID3D iOS mid-level SwiftUI Test 03UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lavamap.ID3D-iOS-mid-level-SwiftUI-Test-03UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ID3D iOS mid-level SwiftUI Test 03";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		011F51AE264F7F74008F5CB3 /* Build configuration list for PBXProject "ID3D iOS mid-level SwiftUI Test 03" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				011F51DB264F7F77008F5CB3 /* Debug */,
+				011F51DC264F7F77008F5CB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		011F51DD264F7F77008F5CB3 /* Build configuration list for PBXNativeTarget "ID3D iOS mid-level SwiftUI Test 03" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				011F51DE264F7F77008F5CB3 /* Debug */,
+				011F51DF264F7F77008F5CB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		011F51E0264F7F77008F5CB3 /* Build configuration list for PBXNativeTarget "ID3D iOS mid-level SwiftUI Test 03Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				011F51E1264F7F77008F5CB3 /* Debug */,
+				011F51E2264F7F77008F5CB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		011F51E3264F7F77008F5CB3 /* Build configuration list for PBXNativeTarget "ID3D iOS mid-level SwiftUI Test 03UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				011F51E4264F7F77008F5CB3 /* Debug */,
+				011F51E5264F7F77008F5CB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		019CB24A2658913300936B32 /* XCRemoteSwiftPackageReference "SwiftUIPlus" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rebeloper/SwiftUIPlus";
+			requirement = {
+				kind = exactVersion;
+				version = 0.0.192;
+			};
+		};
+		019CB3092658E54200936B32 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		019CB24B2658913300936B32 /* SwiftUIPlus */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 019CB24A2658913300936B32 /* XCRemoteSwiftPackageReference "SwiftUIPlus" */;
+			productName = SwiftUIPlus;
+		};
+		019CB30A2658E54300936B32 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 019CB3092658E54200936B32 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		011F51C1264F7F77008F5CB3 /* ID3D_iOS_mid_level_SwiftUI_Test_03.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				011F51C2264F7F77008F5CB3 /* ID3D_iOS_mid_level_SwiftUI_Test_03.xcdatamodel */,
+			);
+			currentVersion = 011F51C2264F7F77008F5CB3 /* ID3D_iOS_mid_level_SwiftUI_Test_03.xcdatamodel */;
+			path = ID3D_iOS_mid_level_SwiftUI_Test_03.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 011F51AB264F7F74008F5CB3 /* Project object */;
+}

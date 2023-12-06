@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Camera Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="CameraController" id="Y6W-OH-hqX" customClass="CameraController" customModule="ID3D_iOS_mid_level_SwiftUI_Test_03" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IAa-vs-L4D">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kKY-7g-gPi">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Capture Count: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1OS-bn-t76">
+                                <rect key="frame" x="12" y="56" width="390" height="22"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="16"/>
+                                <color key="textColor" name="appLabel"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cSX-aB-nlQ">
+                                <rect key="frame" x="167" y="762" width="80" height="80"/>
+                                <color key="backgroundColor" name="appButton"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="5Wq-nT-BXE"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="9wH-A6-Odg"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="BKJ-Hf-YIt"/>
+                                    <constraint firstAttribute="width" constant="80" id="YmI-zv-Ywn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="tintColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="button_TouchUpInside:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Jrn-lF-Xca"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="K5B-D2-I6e"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1OS-bn-t76" firstAttribute="leading" secondItem="K5B-D2-I6e" secondAttribute="leading" constant="12" id="1UF-m4-dmP"/>
+                            <constraint firstItem="kKY-7g-gPi" firstAttribute="top" secondItem="IAa-vs-L4D" secondAttribute="top" id="1iC-oU-tuy"/>
+                            <constraint firstAttribute="trailing" secondItem="kKY-7g-gPi" secondAttribute="trailing" id="4Qo-Iy-Tpd"/>
+                            <constraint firstAttribute="bottom" secondItem="kKY-7g-gPi" secondAttribute="bottom" id="Ca9-mH-0iU"/>
+                            <constraint firstItem="1OS-bn-t76" firstAttribute="top" secondItem="K5B-D2-I6e" secondAttribute="top" constant="12" id="OjO-JR-6GG"/>
+                            <constraint firstItem="K5B-D2-I6e" firstAttribute="bottom" secondItem="cSX-aB-nlQ" secondAttribute="bottom" constant="20" id="bjx-NX-gAz"/>
+                            <constraint firstItem="cSX-aB-nlQ" firstAttribute="centerX" secondItem="IAa-vs-L4D" secondAttribute="centerX" id="oCp-fS-GAb"/>
+                            <constraint firstItem="kKY-7g-gPi" firstAttribute="leading" secondItem="IAa-vs-L4D" secondAttribute="leading" id="xU3-m5-KUq"/>
+                            <constraint firstItem="K5B-D2-I6e" firstAttribute="trailing" secondItem="1OS-bn-t76" secondAttribute="trailing" constant="12" id="ywt-i5-fnh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="cSX-aB-nlQ" id="ccc-Lz-ib9"/>
+                        <outlet property="captureCountLabel" destination="1OS-bn-t76" id="f4P-dH-JAu"/>
+                        <outlet property="flash" destination="kKY-7g-gPi" id="7Dx-VK-ydf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9" y="79"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="appButton">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="appLabel">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
